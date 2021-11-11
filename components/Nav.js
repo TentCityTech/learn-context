@@ -10,7 +10,7 @@ export default function Nav() {
       className='text-light justify-content-between px-4'
     >
       <h2>Dev Josh</h2>
-      <h2>Context Props: <span class='text-danger'> {modals.length}</span> </h2>
+      <h2>Context Objects: <span class='text-danger'> {modals.length}</span> </h2>
     </Navbar>
   )
 }
