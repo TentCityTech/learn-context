@@ -1,4 +1,7 @@
-import { OPEN_MODAL } from '../../components/modals/modalConstants';
+import {
+  OPEN_MODAL,
+  CLOSE_MODAL,
+} from '../../components/modals/modalConstants';
 
 export const modalReducer = (state, action) => {
   switch (action.type) {
@@ -9,5 +12,14 @@ export const modalReducer = (state, action) => {
         modalName: OPEN_MODAL.FOUNDERS_DAY,
         currentUser: action.user,
       };
+    case CLOSE_MODAL:
+      return {
+        ...state,
+        active: false,
+        modalName: '',
+        currentUser: null,
+      };
+    default:
+      return state;
   }
 };

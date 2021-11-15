@@ -25,7 +25,7 @@ export function ModalProvider(props) {
   };
 
   const closeModal = () => {
-    dispatch({ type: CLOSE_MODAL, currentUser: null, active: false });
+    dispatch({ type: CLOSE_MODAL });
   };
 
   return (
